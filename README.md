@@ -37,12 +37,6 @@ The 84 preprocessed scans were then imported onto a jupyter notebook for Python 
 
 ---
 
-## Methodological Discussion
-
-###
-
----
-
 ## Use Guide
 
 ### Requirements
