@@ -17,10 +17,10 @@ This study uses the NIMH Healthy Research Volunteer Dataset, an open-access mult
 
 | File | Description |
 |--------|--------|
-| `BrainHack_Project_Analysis_Code.ipnyb` | Main Python Analysis Notebook |
+| `BrainHack_Project_Code.ipnyb` | Main Python Analysis Notebook |
 | `Raw_Pheno_Data.xlsx` | Initial Cleaned Data |
-| `NIMH_Participants.csv` | Participant Data for VBM Analysis |
-| `NIMH_Scans` | Preprocessed sMRI Scans |
+| `NIMH_Participants_Full.csv` | Participant Data for VBM Analysis |
+| `NIMH_Scans` | Folder of Preprocessed sMRI Scans |
 
 ___
 
@@ -33,7 +33,7 @@ Given that the data collection protocol was modified throughout the NIMH Healthy
 Preprocessing of sMRI data was conducted in MATLAB using SPM12. Information regarding initial sMRI data collection procedures are available from Nugent & Colleagues (2022). Preprocessing involved tissue segmentation, spatial normalisation across scans, modulation, and image smoothing. 
 
 ### 3. VBM Analysis (Python)
-The 54 preprocessed scans were then imported onto a jupyter notebook for Python for the VBM analyses using the nilearn library. Specifically, a Mass-Univariate General Linear Model (GLM) was formulated uing ACE scores, age, sex, total intracranial volume (TIV), and intercept as predictors. This model was then fitted to the voxel-wise data, before a directional t/z-contrast vector was applied to isolate and extract the specific slope of the ACE exposure variable whilst controlling for all other covariates. 
+The 84 preprocessed scans were then imported onto a jupyter notebook for Python for the VBM analyses using the nilearn library. Specifically, a Mass-Univariate General Linear Model (GLM) was formulated uing ACE scores, age, sex, total intracranial volume (TIV), and intercept as predictors. This model was then fitted to the voxel-wise data, before a directional t/z-contrast vector was applied to isolate and extract the specific slope of the ACE exposure variable whilst controlling for all other covariates. 
 
 ---
 
